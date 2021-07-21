@@ -11,14 +11,11 @@ export const Nav = styled.nav`
   font-size: 18px;
   top: 0;
   z-index: 999;
-  height:100vh;
+  height:95vh;
   width:150px;
   background-color: #333;
   /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
-  display: flex;
-  justify-content: flex-start;
-  align-items: none;
 `;
 
 export const Menu = styled.ul`
