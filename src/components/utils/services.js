@@ -7,7 +7,7 @@ class Services {
     console.log('Salva com sucesso.');
   }
 
-  listAll() {
+  listAllClients() {
     let clientes = JSON.parse(localStorage.getItem('clientes') || '[]');
     return clientes;
   }
@@ -19,7 +19,7 @@ class Services {
     console.log('Salva com sucesso.');
   }
 
-  listAll() {
+  listAllProducts() {
     let produtos = JSON.parse(localStorage.getItem('produtos') || '[]');
     return produtos;
   }

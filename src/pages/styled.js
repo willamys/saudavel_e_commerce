@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Content = styled.div`
   width:100%;
@@ -60,4 +61,40 @@ export const Button = styled.button`
     outline: none;
     box-shadow: none;
   }
+`;
+
+export const LinkButton = styled(Link)`
+  cursor: pointer;
+  border: 1px solid #000;
+  height: 3rem;
+  width: 100%;
+  padding: 0 0.5rem;
+  border-radius: .25rem;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14pt;
+  &:focus,
+  &:active{
+    outline: none;
+    box-shadow: none;
+  }
+`;
+
+export const Table = styled.table`
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+`;
+
+export const TableTd = styled.td`
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+`;
+
+export const TableTr = styled.tr`
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 `;
