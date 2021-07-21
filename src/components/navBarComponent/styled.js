@@ -8,7 +8,7 @@ export const Logo = styled.img`
 `;
 
 export const Nav = styled.nav` 
-  font-size: 18px;
+  font-size: 18pt;
   top: 0;
   z-index: 999;
   height:95vh;
@@ -16,6 +16,11 @@ export const Nav = styled.nav`
   background-color: #333;
   /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  @media (max-width: 900px) {
+    height:auto;
+    width:100%;
+    font-size: auto;
+  }
 `;
 
 export const Menu = styled.ul`

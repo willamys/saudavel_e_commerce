@@ -13,7 +13,8 @@ class ClienteManager extends React.Component {
       id: '',
       nome_completo: '',
       email: '',
-      cpf: ''
+      cpf: '',
+      endereco: ''
     }
   }
 
@@ -23,10 +24,16 @@ class ClienteManager extends React.Component {
       id: UUID.v4(),
       nome_completo: this.state.nome_completo,
       email: this.state.email,
-      cpf: this.state.cpf
+      cpf: this.state.cpf,
+      endereco: this.state.endereco
     }
     let s = new Services();
     s.createClient(client);
+
+    this.props.history.push({
+      pathname: '/clientes',
+      state: { message: 'Add  Client ' + this.state.nome_completo + ' Successful' }
+    });
   }
 
   render() {
@@ -43,7 +50,9 @@ class ClienteManager extends React.Component {
             <Input type="email" name="email" id="email" value={this.state.email}
               placeholder="E-mail" onChange={e => this.setState({ email: e.target.value })} required />
             <Input type="text" name="cpf" id="cpf" value={this.state.cpf}
-              placeholder="CPF" onChange={e => this.setState({ cpf: e.target.value })} required />
+              placeholder="CPF" maxLength="14" onChange={e => this.setState({ cpf: e.target.value })} required />
+            <Input type="text" name="endereco" id="endereco" value={this.state.endereco}
+              placeholder="Endereço Completo (Rua, nº, Bairro, Cidade, CEP)" onChange={e => this.setState({ endereco: e.target.value })} required />
             <Button type="submit">Cadastrar</Button>
           </form>
         </Container>

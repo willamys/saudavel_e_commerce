@@ -4,6 +4,7 @@ import InventarioPage from './pages/InventarioPage';
 import ClienteManager from './pages/Clientes';
 import ProdutoManager from './pages/Produtos';
 import ListClient from './pages/ListClient';
+import ListProduct from './pages/ListProduct';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Route exact path="/" exact component={InventarioPage} />
         <Route exact path="/clientes" exact component={ListClient} />
         <Route exact path="/clientes/add" exact component={ClienteManager} />
-        <Route exact path="/produtos" exact component={ProdutoManager} />
+        <Route exact path="/produtos" exact component={ListProduct} />
+        <Route exact path="/produtos/add" exact component={ProdutoManager} />
       </Switch>
     </Router>
     </>

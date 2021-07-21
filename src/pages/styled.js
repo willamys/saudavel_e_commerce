@@ -14,8 +14,7 @@ export const Content = styled.div`
 
 export const Container = styled.div`
   width:100%;
-  padding: 20px;
-  text-align: center;
+  padding: 40px;
 `;
 
 export const Title = styled.h1`
@@ -65,12 +64,13 @@ export const Button = styled.button`
 
 export const LinkButton = styled(Link)`
   cursor: pointer;
-  border: 1px solid #000;
+  text-decoration: none;
+  border: 1px solid #A71E41;
   height: 3rem;
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 12px 30px;
   border-radius: .25rem;
-  background: #000;
+  background: #A71E41;
   color: #fff;
   font-weight: bold;
   font-size: 14pt;
@@ -85,16 +85,23 @@ export const Table = styled.table`
   font-family: sans-serif;
   border-collapse: collapse;
   width: 100%;
+  font-size: 14pt;
 `;
 
 export const TableTd = styled.td`
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  color: #555;
+  height: 3rem;
 `;
 
 export const TableTr = styled.tr`
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+  height: 3rem;
+  &:nth-child(even){
+    background-color: #eee;
+  }
 `;

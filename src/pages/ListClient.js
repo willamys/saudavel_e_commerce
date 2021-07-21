@@ -13,7 +13,8 @@ class ListClient extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      clients: []
+      clients: [],
+      message: ''
     }
     this.refreshClients = this.refreshClients.bind(this);
   }
@@ -32,36 +33,31 @@ class ListClient extends React.Component {
       <Content>
         <NavBarComponent />
         <Container>
+          {this.state.message}
           <Title>
             Listar Clientes
           </Title>
           <Table>
             <thead>
               <TableTr>
-                <th>Id</th>
                 <th>Nome</th>
                 <th>E-mail</th>
-                <th>Update</th>
-                <th>Delete</th>
+                <th>Endereço</th>
               </TableTr>
             </thead>
             <tbody>
               {
                 this.state.clients.map(client =>
                   <TableTr key={client.id}>
-                    <TableTd>{client.id}</TableTd>
                     <TableTd>{client.nome_completo}</TableTd>
                     <TableTd>{client.email}</TableTd>
-                    <TableTd><a to={`/pessoa/details/${client.id}`}><button className="btn btn-success">Update</button></a></TableTd>
-                    <TableTd><button className="btn btn-danger" onClick={() => this.deletePersonClicked(client.id)}>Delete</button></TableTd>
+                    <TableTd>{client.endereco}</TableTd>
                   </TableTr>
                 )
               }
             </tbody>
-          </Table>
-          <div>
-            <LinkButton to="/clientes/add">ADD</LinkButton>
-          </div>
+          </Table><br />
+          <LinkButton to="/clientes/add">ADD</LinkButton>
         </Container>
       </Content >
       <FooterComponent />

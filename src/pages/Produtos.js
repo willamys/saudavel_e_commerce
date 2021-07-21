@@ -38,6 +38,11 @@ class ProdutoManager extends React.Component {
     }
     let s = new Services();
     s.createProduct(product);
+
+    this.props.history.push({
+      pathname: '/produtos',
+      state: { message: 'Add  Produto ' + this.state.nome + ' Successful' }
+    });
   }
 
   render() {
@@ -57,7 +62,7 @@ class ProdutoManager extends React.Component {
               placeholder="Marca do Produto" onChange={e => this.setState({ marca: e.target.value })} required />
             <Label for="img">Imagem do Produto</Label>
             <img src={this.state.img} alt="" width="60px" />
-            <Input type="file" name="img" id="img" accept="image/png, image/jpeg"
+            <Input type="file" name="img" id="img" accept="image/png"
               placeholder="Imagem do Produto" onChange={this.imageUpload} required />
             <Button type="submit">Cadastrar</Button>
           </form>
