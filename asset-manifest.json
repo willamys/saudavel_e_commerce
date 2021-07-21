@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/saudavel_e_commerce/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/saudavel_e_commerce/static/js/main.f93ed91f.chunk.js",
+    "main.js.map": "/saudavel_e_commerce/static/js/main.f93ed91f.chunk.js.map",
+    "runtime-main.js": "/saudavel_e_commerce/static/js/runtime-main.2196da0e.js",
+    "runtime-main.js.map": "/saudavel_e_commerce/static/js/runtime-main.2196da0e.js.map",
+    "static/js/2.d0b28d53.chunk.js": "/saudavel_e_commerce/static/js/2.d0b28d53.chunk.js",
+    "static/js/2.d0b28d53.chunk.js.map": "/saudavel_e_commerce/static/js/2.d0b28d53.chunk.js.map",
+    "static/js/3.10c9cd90.chunk.js": "/saudavel_e_commerce/static/js/3.10c9cd90.chunk.js",
+    "static/js/3.10c9cd90.chunk.js.map": "/saudavel_e_commerce/static/js/3.10c9cd90.chunk.js.map",
+    "index.html": "/saudavel_e_commerce/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/saudavel_e_commerce/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.d0b28d53.chunk.js.LICENSE.txt": "/saudavel_e_commerce/static/js/2.d0b28d53.chunk.js.LICENSE.txt",
+    "static/media/git.5eab40a0.png": "/saudavel_e_commerce/static/media/git.5eab40a0.png",
+    "static/media/linkedIn.3a2357df.png": "/saudavel_e_commerce/static/media/linkedIn.3a2357df.png",
+    "static/media/logo.109cb40f.png": "/saudavel_e_commerce/static/media/logo.109cb40f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2196da0e.js",
+    "static/js/2.d0b28d53.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.f93ed91f.chunk.js"
+  ]
+}
