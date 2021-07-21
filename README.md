@@ -7,6 +7,9 @@ The project was created in the Hiring Coders Program. The aim was develop a inve
 The page result can be access in that [link](https://willamys.github.io/saudavel_e_commerce/)
 
  ![Main Page](https://github.com/willamys/saudavel_e_commerce/blob/master/telas/page.png)
+ 
+ ### Clientes
+ ![Main Page](https://github.com/willamys/saudavel_e_commerce/blob/master/telas/clientes.png)
 
 ### Resources
 
