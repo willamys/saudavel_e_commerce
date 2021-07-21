@@ -6,7 +6,23 @@ The project was created in the Hiring Coders Program. The aim was develop a inve
 
 The page result can be access in that [link](https://willamys.github.io/saudavel_e_commerce/)
 
- ![]()
+ ![Main Page](https://github.com/willamys/saudavel_e_commerce/blob/master/telas/page.png)
+ 
+ ### Clients Page
+ 
+ In this page, the user will see the clients stored in the localStorage.
+ ![Main Page](https://github.com/willamys/saudavel_e_commerce/blob/master/telas/clientes.png)
+ 
+  In this page, the user will be able to insert the new clients. All the data is stored in the localStorage.
+ ![Main Page](https://github.com/willamys/saudavel_e_commerce/blob/master/telas/cadcliente.png)
+ 
+ ### Produtct Page
+ 
+  In this page, the user will see the products stored in the localStorage.
+ ![Main Page](https://github.com/willamys/saudavel_e_commerce/blob/master/telas/produtos.png)
+ 
+  In this page, the user will be able to insert the new products. The feature interesting is about set a image for your product. All the data is stored in the localStorage.
+ ![Main Page](https://github.com/willamys/saudavel_e_commerce/blob/master/telas/cadprodutos.png)
 
 ### Resources
 
